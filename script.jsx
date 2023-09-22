@@ -68,144 +68,804 @@ function safe_tags_replace(str) {
 
 var quizQuestionsArray = [
     {
-        question: "O que acontece quando o computador executa este trecho de código?",
+        question: "TV digital, enciclopédias digitais e simuladores interativos são de qual tipo de interface?",
         answers: [
-            "O computador salvará na memória o texto 'Olá, mundo!'",
-            "O computador salvará no disco rígido o texto 'Olá, mundo!'",
-            "O computador mostrará na tela o texto 'Olá, mundo!'.",
-            "Nada acontecerá"
+            "Móvel",
+            "Gráfica",
+            "Multimídia",
+            "Multimodal"
+            
+            
         ],
-        optrue: "O computador mostrará na tela o texto 'Olá, mundo!'.",
-        code: "print('Olá, mundo!')",
-    },
-    {
-        question: "O que faz a função 'soma' e qual será o resultado da execução do trecho de código?",
-        answers: [
-            "Soma dois números, e o resultado será 10",
-            "Soma dois números, e o resultado será 8",
-            "Soma dois números, e o resultado será 9",
-            "Soma dois números, e o resultado será 11"
-        ],
-        optrue: "Soma dois números, e o resultado será 8",
-        code: "a = 5 <br> b = 3 <br> funcao soma(a, b) <br> &nbsp; retorne a+b",
-    },
-    {
-        question: "Qual será a saída desse código?",
-        answers: [
-            "pessoa + ' gosta de '+ fruta",
-            "Ambrósio gosta de laranja",
-            "Ambrósio gosta de fruta",
-            "pessoa gosta de laranja"
-        ],
-        optrue: "Ambrósio gosta de laranja",
-        code: "pessoa = 'Ambrósio' <br> fruta = 'laranja' <br> mensagem = pessoa + ' gosta de '+ fruta <br> print(mensagem)",
-    },
-    {
-        question: "Qual será o valor lógico das variáveis D e E?",
-        answers: [
-            "D Verdadeiro, E Falso",
-            "D Verdadeiro, E Verdadeiro",
-            "D Falso, E Verdadeiro",
-            "D Falso, E Falso"
-        ],
-        optrue: "D Verdadeiro, E Verdadeiro",
-        code: "A = Verdadeiro <br> B = Falso <br> C = Verdadeiro  <br> D = ((A ou B) e C) <br> E = (A e C)",
-    },
-    {
-        question: "Qual será o valor da variável após a execução deste algoritmo?",
-        answers: [
-            "10",
-            "9",
-            "11",
-            "Nenhuma das alternativas"
-        ],
-        optrue: "10",
-        code: "variavel = 0 <br> (Enquanto variavel < 10) faça <br> &nbsp; variavel = variavel + 1",
-    },
-    {
-        question: "Qual é o valor da variável f?",
-        answers: [
-            "9",
-            "7",
-            "2",
-            "10"
-        ],
-        optrue: "10",
-        code: "c = 7 <br> d = 2 <br> e = 10 <br> f = c + d <br> d = e <br> f = d",
-    },
-    {
-        question: "Qual o tipo de variável mais adequada para armazenar o valor 'c':",
-        answers: [
-            "Variável do tipo carácter/string",
-            "Variável do tipo número inteiro",
-            "Variável do tipo número decimal (float)",
-            "Variável do tipo número decimal de dupla precisão (double)"
-        ],
-        optrue: "Variável do tipo carácter/string",
+        optrue:  "Multimídia",
         code: "",
     },
     {
-        question: "Qual algoritmo de ordenação tem maior eficiência de tempo?",
+        question: "Qual é a principal característica da interface do tipo multimídia?",
         answers: [
-            "Bubble Sort",
-            "Quick Sort",
-            "Selection Sort",
-            "Insertion Sort"
+          "Combina diferentes meios de comunicação dentro de uma única interface",
+          "Permite que o usuário veja padrões e tendências para obter uma melhor compreensão",
+          "Permite que o usuário veja anomalias e erros para poder corrigi-los",
+          "Inclui as interfaces de máquina e dispositivos físicos usados em casa",
+          
         ],
-        optrue: "Quick Sort",
+        optrue:  "Combina diferentes meios de comunicação dentro de uma única interface",
         code: "",
     },
     {
-        question: "Qual algoritmo de ordenação tem maior eficiência de espaço?",
+      question: "São exemplos de eletrônicos de consumo e eletrodomésticos:",
+      answers: [
+        "Vassouras, microondas, sofás",
+        "Pás, armários, ventiladores",
+        "Criados-mudos, pendrives, nichos",
+        "Controles remotos, geladeiras, máquinas de lavar"
+      ],
+      optrue: "Controles remotos, geladeiras, máquinas de lavar",
+      code: "",
+    },
+    {
+        question: "Qual é a principal característica da interface Touch?",
         answers: [
-            "Heap Sort",
-            "Quick Sort",
-            "Merge Sort",
-            "Count Sort"
+            
+            "Captura feita através de sensores de movimentos e profundidade",
+            "Detecção da presença e localização de uma pessoa pelo toque na tela, bem como a opção seleiconada (caixas eletrônicos, smartphones, tablets)",
+            "Sensibilidade ao tato",
+            "Utilização de diferentes modalidades de interação: tatos, visão, som, fala"
         ],
-        optrue: "Heap Sort",
+        optrue: "Sensibilidade ao tato",
         code: "",
     },
     {
-        question: "Qual dos algoritmos abaixo tem complexidade de tempo de execução linear?",
+        question: "A Siri se encaixa em qual tipo de interface?",
         answers: [
-            "a",
-            "b",
-            "c",
-            "Nenhuma das alternativas"
+            "Móvel",
+            "Fala",
+            "Menu Interativo",
+            "Multimodal"
+            
         ],
-        optrue: "b",
-        code:
-            "Alternativa a<br>" +
-            "i = 1 <br>" +
-            "j = 1 <br>" +
-            "enquanto (i < 10) <br>" +
-            "&nbsp; enquanto (j < 10) <br>" +
-            "&nbsp; &nbsp; print('Olá, mundo!')<br>" +
-            "&nbsp; &nbsp; j = j+1 <br>" +
-            "&nbsp; i = i+1<br>" +
-            "________________________<br>" +
-            "Alternativa b<br>" +
-            "i = 1 <br>" +
-            "enquanto (i < 10)<br>" +
-            "&nbsp; i = i+1 <br>" +
-            "________________________<br>" +
-            "Alternativa c<br>" +
-            "i = 1 <br>" +
-            "j = 1 <br>" +
-            "enquanto (i < 10)<br>" +
-            "&nbsp; enquanto (j < 10)<br>" +
-            "&nbsp; &nbsp; print('Olá, mundo!')<br>" +
-            "&nbsp; &nbsp; j = j+1 <br>" +
-            "&nbsp; i = i+1 <br>" +
-            "<br>" +
-            "i = 1<br>" +
-            "enquanto (i < 10)<br>" +
-            "&nbsp; i = i+1"
-    }
+        optrue: "Fala",
+        code: "",
+    },
+    {
+        question: "Pokemon Go se encaixa em qual tipo de interface?",
+        answers: [
+            "Realidade Virtual",
+            "Realidade aumentada e mista",
+            "Multiusuário",
+            "Inteligência Artificial"
+            
+        ],
+        optrue: "Realidade aumentada e mista",
+        code: "",
+    },
+    {
+        question: "Qual dessas peças é responsável pelo armazenamento de dados da máquina?",
+        answers: [
+            "Hard Disk (HD)",
+            "Memória RAM",
+            "Placa-Mãe (MB)",
+            "Processador (CPU)",
+           
+        ],
+        optrue: "Hard Disk (HD)",
+        code:"",
+    },
+    {
+        question: "Os hardwares podem se dividir em 4 categorias, sendo elas:",
+        answers: [
+            "Dispositivos de entrada, Dispositivos de saída, Dispositivos de captura, Dispositivos de imagem",
+            "Dispositivos internos, Dispositivos de saída",
+            "Dispositivos de armazenamento secundário, Componentes internos, Dispositivos de saída, Dispositivos de entrada",
+            "Dispositivos de som, Dispositivos de texto, Dispositivos de imagem, Dispositivos de movimento"
+        ],
+        optrue: "Dispositivos de entrada, Dispositivos de saída, Dispositivos de captura, Dispositivos de imagem",
+        code:"",
+    },
+    {
+        question: "Na informática, existe um sistema de medidas que é medido em números e letras. Baseando-se nessa afirmação, qual das alternativas representa uma dessas medidas?",
+        answers: [
+            "10KG",
+            "A4",
+            "U2",
+            "1GB"
+        ],
+        optrue: "1GB",
+        code:"",
+    },
+    {
+        question: "Qual desses Sistemas Operacionais é pertencente à Microsoft?",
+        answers: [
+            "Windows",
+            "Mac",
+            "Ubuntu",
+            "Android"
+        ],
+        optrue: "Windows",
+        code: "",
+    },
+    {
+        question: "Qual destas senhas é a mais frequentemente utilizada na internet, sendo também a primeira na lista rockyou.txt?",
+        answers: [
+            "a1b2c3",
+            "654321",
+            "abcdef",
+            "123456"
+        ],
+        optrue: "123456",
+        code: "",
+    },
+    {
+        question: "A sigla DTI quer dizer:",
+        answers: [
+            "Departamento de Tecnologia de Inteligência",
+            "Departamento de Traição Intelectual",
+            "Departamento de Tecnologia da Informação",
+            "Departamento de Tráfego de Informação",
+            
+        ],
+        optrue: "Departamento de Tecnologia da Informação",
+        code: "",
+    },
+    {
+        question: "O que são dados, no contexto da informática?",
+        answers: [
+            "São as partes de programas",
+            "São resquícios de arquivos corrompidos",
+            "São informações desencontradas",
+            "São testes de intrusão invasores"
+        ],
+        optrue: "São as partes de programas",
+        code: "",
+    },
+    {
+        question: "Na falta de qual destes componentes, você não consegue utilizar um computador?",
+        answers: [
+            "Teclado",
+            "Caixas de Som",
+            "Placa-Mãe",
+            "Cabo de Força"
+        ],
+        optrue: "Cabo de Força",
+        code: "",
+    },
+    {
+        question: "Ѕãо exemplos de Hardware, somente:",
+        answers: [
+            "Placa de Vídeo, Word e Paint",
+            "Monitor, Excel, Cabo de Força",
+            "Memória, Leitor de Código de Barras e Placa de Rede",
+            "MSDos, Thinclient, Word"
+        ],
+        optrue: "Memória, Leitor de Código de Barras e Placa de Rede",
+        code: "",
+    },
+    {
+        question: "É o principal componente de um computador:",
+        answers: [
+            "Memória",
+            "Processador",
+            "Monitor",
+            "Usuário"
+        ],
+        optrue: "Processador",
+        code: "",
+    },
+    {
+        question: "O que significa a sigla “WWW” na internet?",
+        answers: [
+            "World Wide Web",
+            "Web World Wide",
+            "Web Wide World",
+            "World War Won"
+        ],
+        optrue: "World Wide Web",
+        code: "",
+    },
+    {
+        question: "Qual foi a primeira rede social da história da internet?",
+        answers: [
+            "MySpace",
+            "Classmate",
+            "Orkut",
+            "Facebook"
+        ],
+        optrue: "Classmate",
+        code: "",
+    },
+    {
+        question: "Qual a resolução de uma imagem Full HD?",
+        answers: [
+            "1280 x 720",
+            "2560 x 1440",
+            "1920 x 1080",
+            "1260 x 1080"
+        ],
+        optrue: "1920 x 1080",
+        code: "",
+    },
+    {
+        question: "Software é o:",
+        answers: [
+            "Conjunto de programas que permitem o funcionamento e utilização da máquina",
+            "Conjunto de componentes que permitem o funcionamento e utilização do sistema operacional",
+            "Conjunto de programas que permitem o funcionamento e utilização do navegador",
+            "Conjunto de componentes que formam a parte física do computador"
+        ],
+        optrue: "Conjunto de programas que permitem o funcionamento e utilização da máquina",
+        code: "",
+    },
+    {
+        question: "Sobre o gabinete do computador, assinale a alternativa correta:",
+        answers: [
+            "É a 'caixa' do computador, onde ficam seus elementos (hardware)",
+            "Nele encontram-se a placa mãe, a fonte, as unidades de discos, a CPU, as memórias, o HD etc",
+            "Ele pode ser horizontal ou vertical e, nesse último caso, é chamado de torre",
+            "Gabinete e CPU são sinônimos",
+        ],
+        optrue: "Gabinete e CPU são sinônimos",
+        code: "",
+    },
+    {
+        question: "O Disco Rígido, do inglês Hard Disk, também conhecido como HD, serve como:",
+        answers: [
+            "Transporte de dados",
+            "Unidade de armazenamento permanente, guardando dados e programas",
+            "Programa de edição de textos",
+            "Navegador para acesso à internet",
+            "Armazenamento de memória volátil, que se perde com o desligamento do computador"
+        ],
+        optrue: "Unidade de armazenamento permanente, guardando dados e programas",
+        code: "",
+    },
+    {
+        question: "Random Access Memory é mais conhecida como:",
+        answers: [
+            "Memória ROM",
+            "Memória interna",
+            "Memória externa",
+            "Memória RAM",
+            "Memória Permantente"
+        ],
+        optrue: "Memória RAM",
+        code: "",
+    },
+    {
+        question: "A Fonte de Energia do Computador:",
+        answers: [
+            "É responsável por converter a voltagem da energia elétrica, que chega pelas tomadas, em voltagens maiores, capazes de ser suportadas pelos componentes do computador",
+            "É responsável por converter a voltagem da energia elétrica, que chega pelas tomadas, em voltagens menores, capazes de ser suportadas pelos componentes do computador",
+            "É responsável por converter a voltagem da energia elétrica, que chega pelas baterias, em voltagens maiores",
+            "É um recurso que possibilita alterar o tamanho e o formato das letras em programas de edição de texto",
+            "É um recurso que possibilita alterar a voltagem da energia elétrica a fim de sobrecarregar os componentes do computador"
+        ],
+        optrue: "É responsável por converter a voltagem da energia elétrica, que chega pelas baterias, em voltagens maiores",
+        code: "",
+    },
+    {
+        question: "Sobre o Pendrive, é incorreto afirmar que:",
+        answers: [
+            "É a mídia portátil mais utilizada pelos usuários de computadores atualmente",
+            "Ele precisa recarregar energia para manter os dados armazenados",
+            "É seguro e estável, ao contrário dos antigos Disquetes",
+            "É usado através de uma porta USB",
+            "É constituído por Memória Flash"
+        ],
+        optrue: "Ele precisa recarregar energia para manter os dados armazenados",
+        code: "",
+    },
+    {
+        question: "A área de trabalho também é conhecida como:",
+        answers: [
+            "Documentos",
+            "Desktop",
+            "Word",
+            "Internet",
+            "HD"
+        ],
+        optrue: "Desktop",
+        code: "",
+    },
+    {
+        question: "Buscador da internet mais utilizado atualmente:",
+        answers: [
+            "Google",
+            "Bing",
+            "Youtube",
+            "Yahoo",
+            "ASK"
+        ],
+        optrue: "Google",
+        code: "",
+    },
+    {
+        question: "Entre os vários tipos de buscadores, qual deles tem o propósito de conectar profissionais a oportunidades de emprego?",
+        answers: [
+            "Facebook",
+            "Twitter",
+            "Instagram",
+            "LinkedIn"
+        ],
+        optrue: "LinkedIn",
+        code: "",
+    },
+    {
+        question: "Quais são as teclas de atalho para criar uma nova pasta no computador?",
+        answers: [
+            "Ctrl+N",
+            "Ctrl+T",
+            "Ctrl+Shift+N",
+            "Ctrl+Shift+M",
+           
+        ],
+        optrue: "Ctrl+Shift+N",
+        code: "",
+    },
+    {
+        question: "O que é animação no PowerPoint?",
+        answers: [
+            "Efeito de um slide para o outro",
+            "Efeitos que podem fazer objetos aparecer, desaparecer ou se mover",
+            "São os designs coloridos internos que podem ser aplicados às apresentações",
+            "Designs coloridos"
+        ],
+        optrue: "Efeitos que podem fazer objetos aparecer, desaparecer ou se mover",
+        code: "",
+    },
+    {
+        question: "Download é:",
+        answers: [
+            "Enviar vírus para outro computador",
+            "Cadastrar-se em um site",
+            "Ato de enviar arquivos",
+            "Baixar qualquer arquivo da internet",
+            
+        ],
+        optrue: "Baixar qualquer arquivo da internet",
+        code: "",
+    },
+    {
+        question: "O que é internet?",
+        answers: [
+            "Uma conexão sem fio",
+            "Uma rede global de computadores",
+            "Correio eletrônico internacional",
+            "Aplicativo para envio de documentos"
+        ],
+        optrue: "Uma rede global de computadores",
+        code: "",
+    },
+    {
+        question: "Qual é a melhor definição para o Microsoft Power Point?",
+        answers: [
+            "Software destinado apenas a efeitos de slides",
+            "Aplicativo utilizado para criar apresentações gráficas atrativas e eficientes",
+            "Aplicativo destinado à criação de vetores profissionais",
+            "Aplicativo utilizado para criar planilhas gráficas atrativas e eficientes"
+        ],
+        optrue: "Aplicativo utilizado para criar apresentações gráficas atrativas e eficientes",
+        code: "",
+    },
+    {
+        question: "Quem distribui a energia elétrica para todo o computador?",
+        answers: [
+            "A Fonte",
+            "O Estabilizador/Transformador",
+            "O Cabo de Energia",
+            "A Placa-Mãe",
+            "O Processador"
+        ],
+        optrue: "O Estabilizador/Transformador",
+        code: "",
+    },
+    {
+        question: "O que significa a sigla PC, no contexto da informática?",
+        answers: [
+            "Placa Compacta",
+            "Projeto Conjunto",
+            "Computador Pessoal",
+            "Processamento Computadorizado"
+        ],
+        optrue: "Computador Pessoal",
+        code: "",
+    },
+    {
+        question: "O que é antivírus de computador?",
+        answers: [
+            "É um software que consiste num conjunto de malwares, firewalls e ransomwares que atuam no computador",
+            "É um hardware que protege o computador contra vírus",
+            "É um software que protege o computador contra vírus",
+            "É um software que protege os seres humanos contra vírus",
+            "É um programa que prejudica o computador"
+        ],
+        optrue: "É um software que protege o computador contra vírus",
+        code: "",
+    },
+    {
+        question: "Arquivos de Vídeo podem ter extensão:",
+        answers: [
+            "MKV, MPG",
+            "AVI, TXT",
+            "DOC, MPG",
+            "TXT AVI",
+            "Nenhuma alternativa acima está correta"
+        ],
+        optrue: "MKV, MPG",
+        code: "",
+    },
+    {
+        question: "Ctrl+C + Crl+V é um comando utilizado para:",
+        answers: [
+            "Copiar todo o texto da página",
+            "Criar um novo arquivo",
+            "Copiar e colar um texto au arquivo para outro local",
+            "Recortar textos e arquivos de uma pasta",
+            "Deletar arquivos definitivamente"
+        ],
+        optrue: "Copiar e colar um texto au arquivo para outro local",
+        code: "",
+    },
+    {
+        question: "Qual extensão abaixo geralmente designa um arquivo de imagem?",
+        answers: [
+            "AVI",
+            "JPEG",
+            "MP4",
+            "MP2",
+            "3G2"
+        ],
+        optrue: "JPEG",
+        code: "",
+    },
+    {
+        question: "Qual é a função da memória RAM?:",
+        answers: [
+            "Armazenar arquivos do sistema",
+            "Controlar o processador e torná-lo mais eficiente",
+            "Criar grande capacidade de armazenamento em disco",
+            "Armazenar dados de programas quando este está em execução, aumentando a velocidade do processamento na próxima utilização",
+            "Aumentar a capacidade de processamento da CPU, tornando mais precisa e eficaz a execução de aplicativos do sistema"
+        ],
+        optrue: "Armazenar dados de programas quando este está em execução, aumentando a velocidade do processamento na próxima utilização",
+        code: "",
+    },
+    {
+        question: "O que é informática?",
+        answers: [
+            "É a habilidade de invadir um sistema",
+            "É o conjunto das ciências da informação",
+            "É o conjunto de componentes de hardware",
+            "É um determinado conjunto de programas de computador",
+            "É a disciplina que estuda os meios de comunicação"
+        ],
+        optrue: "É o conjunto das ciências da informação",
+        code: "",
+    },
+    {
+        question: "Qual desses nomes pertence ao inventor da Microsoft e que também já recebeu o título de homem mais rico do mundo?",
+        answers: [
+            "Jeff Bezos",
+            "Martin Luther King",
+            "Bill Gates",
+            "Elon Musk"
+            
+        ],
+        optrue: "Bill Gates",
+        code: "",
+    },
+    {
+        question: "O que é a Internet das Coisas (IoT)?",
+        answers: [
+            "Tecnologia exclusiva de indústrias para conexão de equipamentos",
+            "Objetos cotidianos conectados à internet e que conversam entre si",
+            "Tecnologia que mantém as redes sociais funcionando",
+            "Venda de produtos eletrônicos na internet"
+        ],
+        optrue: "Objetos cotidianos conectados à internet e que conversam entre si",
+        code: "",
+    },
+    {
+        question: "Inteligência Artificial (IA):",
+        answers: [
+            "É uma inteligência que não é real",
+            "É um dispositivo tecnológico programado para aprender e reproduzir padrões",
+            "Imita a inteligência humana para executar tarefas",
+            "São máquinas programadas por outras máquinas",
+            "Já superou a inteligência humana em todos aspectos"
+        ],
+        optrue: "Imita a inteligência humana para executar tarefas",
+        code: "",
+    },
+    {
+        question: "O que é algoritmo?",
+        answers: [
+            "É a operação inversa da exponencial utilizada para o cálculo de equações exponenciais que não possuem soluções imediatas",
+            "Sistema programado por máquinas que toma decisões pelos humanos",
+            "É o processo de converter o código escrito em uma linguagem de programação para código binário",
+            "Instrumento tecnológico que emprega técnicas de levantamento de dados e formas de processá-los, por meio de instruções claras e bem definidas"
+        ],
+        optrue: "Instrumento tecnológico que emprega técnicas de levantamento de dados e formas de processá-los, por meio de instruções claras e bem definidas",
+        code: "",
+    },
+    {
+        question: "Machine Learning consiste em:",
+        answers: [
+            "Instrumento tecnológico usado em sala de aula para melhorar o aprendizado dos alunos",
+            "Computadores criados especialmente para o mercado de educação",
+            "Máquinas que aprendem sozinhas analisando dados e detectando padrões",
+            "Prêmio especial dado para alunos-destaque no término da formação do Programa OxeTech"
+        ],
+        optrue: "Máquinas que aprendem sozinhas analisando dados e detectando padrões",
+        code: "",
+    }, 
+    {
+        question: "O que é o Reconhecimento Facial?",
+        answers: [
+            "Identifica pessoas usando biometria facial, mesmo que estejam em meio a uma multidão",
+            "Identifica pessoas usando biometria facial, mas não funciona em multidões",
+            "Tecnologia usada por governos para aumentar a privacidade dos cidadãos",
+            "Tecnologia usada pelo Centro de Inovações para permitir apenas que alagoanos possam entrar"
+        ],
+        optrue: "Identifica pessoas usando biometria facial, mesmo que estejam em meio a uma multidão",
+        code: "",
+    },
+    {
+        question: "O que é Big Data?",
+        answers: [
+            "Problema previsto para ocorrer em todos os sistemas informatizados na passagem do ano de 1999 para 2000, também conhecido como Bug do Milênio",
+            "Grande volume de dados que pode gerar percepções e planejamentos para empresas",
+            "Nome dado à data da inauguração da primeira Apple Store na cidade de Nova Iorque (Big Apple)",
+            "Linguagem de programação com foco na estruturação de dados"
+        ],
+        optrue: "Grande volume de dados que pode gerar percepções e planejamentos para empresas",
+        code: "",
+    },
+    {
+        question: "O que é Criptomoeda?",
+        answers: [
+            "Moeda virtual controlada e regulada por instituições financeiras e bancos centrais",
+            "Moeda que pode ser feita por qualquer um no computador e impressa para uso real",
+            "Moeda virtual que só pode ser usada para compras na internet",
+            "Moeda virtual com transações validadas e asseguradas por blockchain (registro digital)"
+        ],
+        optrue: "Moeda virtual com transações validadas e asseguradas por blockchain (registro digital)",
+        code: "",
+    },
+    {
+        question: "O que é Computação Quântica?",
+        answers: [
+            "Termo inventado no cinema, mas que não existe no mundo real",
+            "Computadores mais lentos, mas com grande capacidade de processamento e armazenamento",
+            "Máquinas muito mais rápidas que solucionam problemas que não poderiam ser resolvidos por computadores convencionais",
+            "Computadores com foco único na soma de quantias, utilizando operações exponenciais de alta complexidade"
+            
+        ],
+        optrue: "Máquinas muito mais rápidas que solucionam problemas que não poderiam ser resolvidos por computadores convencionais",
+        code: "",
+    },
+    {
+        question: "O que é Realidade Virtual?",
+        answers: [
+            "Tecnologia usada para transportar atores para os cenários computadorizados que vemos em filmes",
+            "Tecnologia de interface para imersão em um ambiente virtual",
+            "Tecnologia que utiliza o input de usuário para gerar imagens por meio de inteligência artificial",
+            "Tecnologia que transforma pensamentos em imagens em tempo real por meio de inteligência artificial"
+        ],
+        optrue: "Tecnologia de interface para imersão em um ambiente virtual",
+        code: "",
+    },
+    {
+        question: "O que é Realidade Aumentada?",
+        answers: [
+            "Tecnologia usada nos óculos 3D em cinemas",
+            "Lupa digital capaz de aumentar mil vezes uma imagem sem distorção",
+            "Imersão em ambiente virtual com dispositivo VR",
+            "Tecnologia que mistura o mundo virtual ao real"
+        ],
+        optrue: "Tecnologia que mistura o mundo virtual ao real",
+        code: "",
+    },
+    {
+        question: "O que é Computação em Nuvem?",
+        answers: [
+            "Servidores em balões que hospedam arquivos de companhias",
+            "Instrumento usado por meteorologistas para conseguir predizer o clima ",
+            "Arquivos, aplicativos e sistemas podem ser acessados de qualquer lugar do mundo",
+            "Arquivos, aplicativos e sistemas hospedados na internet, mas que só podem ser acessados a partir do local de upload"
+        ],
+        optrue: "Arquivos, aplicativos e sistemas podem ser acessados de qualquer lugar do mundo",
+        code: "",
+    },
+    {
+        question: "Atualmente (novembro de 2022), qual o youtuber com mais inscritos (111 milhões) em seu canal?",
+        answers: [
+            "MrBeast",
+            "Pewdiepie",
+            "Casemiro",
+            "KondZilla"
+        ],
+        optrue: "Pewdiepie",
+        code: "",
+    },
+    {
+        question: "Qual o nome do sistema operacional mobile mais utilizado hoje em dia?",
+        answers: [
+            "Windows",
+            "iOS",
+            "Linux",
+            "Android"
+        ],
+        optrue: "Android",
+        code: "",
+    },
+    {
+        question: "O que significa a sigla NASA traduzida?",
+        answers: [
+            "Administração Nacional da Aeronáutica e do Esporte",
+            "Administração Nacional da Automobilística e do Еѕраçо",
+            "Administração Nacional da Aeronáutica e do Еѕраçо",
+            "Administração Internacional da Aeronáutica e Еѕраçо",
+            "Administração Nacional de Automobilismo Espacial"
+        ],
+        optrue: "Administração Nacional da Aeronáutica e do Еѕраçо",
+        code: "",
+    },
+    {
+        question: "Qual é o projeto da NASA que tem o objetivo de levar o ser humano à lua atualmente?",
+        answers: [
+            "Gemini",
+            "Apollo",
+            "Artemis",
+            "Alpha",
+            
+        ],
+        optrue: "Artemis",
+        code: "",
+    },
+    {
+        question: "Quem foi o criador do Facebook?",
+        answers: [
+            "David Karp",
+            "Mark Zuckerberg",
+            "Mike Krieger",
+            "Reid Hoffman"
+        ],
+        optrue: "Mark Zuckerberg",
+        code: "",
+    },
+    {
+        question: "Quantos e-mails são enviados diariamente em todo mundo?",
+        answers: [
+            "100 milhões",
+            "200 milhões",
+            "500 milhões",
+            "100 bilhões",
+            "200 bilhões"
+        ],
+        optrue: "100 bilhões",
+        code: "",
+    },
+    {
+        question: "Qual o lugar no mundo onde há maior acesso à internet por sua população (com 92% de cobertura)?",
+        answers: [
+            "Estados Unidos",
+            "Japão",
+            "Canadá",
+            "Groenlândia",
+            "Brasil"
+        ],
+        optrue: "Groenlândia",
+        code: "",
+    },
+    {
+        question: "Quando a internet foi inventada (por motivos de estratégia de guerra) e quando foi liberada ao público geral (por motivos de popularização e potencialidade de uso)?",
+        answers: [
+            "1957-1976",
+            "1969-1989",
+            "1975-2000",
+            "1985-2001",
+            "1996-2005"
+        ],
+        optrue: "1969-1989",
+        code: "",
+    },
+    {
+        question: "Quantas páginas existem na Web atualmente (número não-estático, cresce a cada minuto)?",
+        answers: [
+            "Mais de 590 milhões",
+            "Mais de 2.5 bilhões",
+            "Mais de 4.5 bilhões",
+            "Mais de 1.2 trilhão"
+        ],
+        optrue: "Mais de 4.5 bilhões",
+        code: "",
+    },
+    {
+        question: "Quantas árvores seriam necessárias para imprimir o conteúdo de toda a internet?",
+        answers: [
+            "Mais de 61 milhões",
+            "Mais de 84 milhões",
+            "Mais de 120 milhões",
+            "Mais de 145 milhões",
+            "Mais de 300 milhões"
+        ],
+        optrue: "Mais de 61 milhões",
+        code: "",
+    },
+    {
+        question: "O que significa IP?",
+        answers: [
+            "Internet Pack",
+            "Internet Protocol",
+            "Internet Production",
+            "Internet Provider",
+            "Internet de Propaganda"
+        ],
+        optrue: "Internet Protocol",
+        code: "",
+    },
+    {
+        question: "O que são provedores?",
+        answers: [
+            "Empresa que provê recursos para as pessoas",
+            "Empresa que fornece o acesso à internet",
+            "Empresa que administra a internet",
+            "Empresários que criaram a internet",
+            "Sites de pesquisa"
+        ],
+        optrue: "Empresa que fornece o acesso à internet",
+        code: "",
+    },
+    {
+        question: "Quais desses são navegadores de internet?",
+        answers: [
+            "Internet Explorer, Firefox, Chrome",
+            "Photoshop, CorelDraw!, Gimp",
+            "LibreOffice.Calc, Excel, Lotus 123",
+            "Word, Excel, PowerPoint",
+            "Wordpad, Microsoft Word, OpenOffice.Write"
+        ],
+        optrue: "Internet Explorer, Firefox, Chrome",
+        code: "",
+    },
+    {
+        question: "O que são hyperlinks?",
+        answers: [
+            "Páginas de Emoticons",
+            "Links fortes, ou seja, links protegidos por criptografia",
+            "Redes de compartilhamento de imagens",
+            "Palavras-chave ou partes de texto que fazem conexão entre uma página e outra da internet para complemento de informação",
+            
+        ],
+        optrue: "Palavras-chave ou partes de texto que fazem conexão entre uma página e outra da internet para complemento de informação",
+        code: "",
+    },
+    {
+        question: "O que é URL?",
+        answers: [
+            "Endereço de um documento",
+            "Endereço de uma página",
+            "Endereço da sua placa-mãe",
+            "Endereço do seu modem",
+            "Endereço do seu computador"
+        ],
+        optrue: "Endereço de uma página",
+        code: "",
+    },
+    {
+        question: "O que são Cookies?",
+        answers: [
+            "Bibliotecas para aplicações de delivery de comida",
+            "Falha ou erro no código de um programa",
+            "Ferramenta que armazena as preferências dos usuários em um determinado site",
+            "Um fragmento prejudicial de software"
+        ],
+        optrue: "Ferramenta que armazena as preferências dos usuários em um determinado site",
+        code: "",
+    },
 ];
 
-// quizQuestionsArray = shuffle(quizQuestionsArray);
+quizQuestionsArray = shuffle(quizQuestionsArray);
 
 // setting display visibility
 if (scoreDisplay) { scoreDisplay.hidden = true; } //  hide score, timer, and q&a areas
